@@ -6,6 +6,9 @@ function ContactCard() {
 			phone: '=',
 			username: '='
 		},
+		controller: function($scope) {
+			$scope.username = $scope.username.toLowerCase();
+		},
 		template: [
 			'<div>',
 				'<h4>Contact Card</h4>',
